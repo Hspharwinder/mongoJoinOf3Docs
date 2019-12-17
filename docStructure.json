@@ -1,1 +1,187 @@
 
+// 1. comment doc
+//---------------------------------------------------------------------------------------------------------
+/* 1 */
+{
+    "_id" : 0,
+    "userId" : 2,
+    "mediaId" : ObjectId("5dc27fba58d3c937c070d29c"),
+    "__v" : 0
+}
+
+/* 2 */
+{
+    "_id" : 1,
+    "userId" : 2,
+    "mediaId" : ObjectId("5dc27fba58d3c937c070d29c"),
+    "comment" : "nice boy",
+    "__v" : 0
+}
+
+
+// 2. songs doc
+//--------------------------------------------------------------------------------------------------------
+/* 1 */
+{
+    "_id" : ObjectId("5dc27fba58d3c937c070d29c"),
+    "name" : "abcSong",
+    "artistId" : 2,
+    "userType" : 1,
+    "filePath" : "name2",
+    "thumbnailPath" : "name2",
+    "__v" : 0
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5dc27fc158d3c937c070d29d"),
+    "name" : "abcSong2",
+    "artistId" : 2,
+    "userType" : 1,
+    "filePath" : "name2",
+    "thumbnailPath" : "name2",
+    "__v" : 0
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5dc27fce58d3c937c070d29e"),
+    "name" : "abcSong3",
+    "artistId" : 3,
+    "userType" : 2,
+    "filePath" : "name3",
+    "thumbnailPath" : "name3",
+    "__v" : 0
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5dc27fd158d3c937c070d29f"),
+    "name" : "abcSong3",
+    "artistId" : 3,
+    "userType" : 2,
+    "filePath" : "name3",
+    "thumbnailPath" : "name3",
+    "__v" : 0
+}
+
+// 3. user doc 
+// -------------------------------------------------------------------------------------------------------------
+/* 1 */
+{
+    "_id" : 2,
+    "name" : "name1",
+    "email" : "1@gmail.com",
+    "status" : 2,
+    "description" : "des ArtitstSptest8",
+    "userName" : "abc@123.com",
+    "password" : "95ea69ca7649afc3163855cc383203d46c870135bb8530ca1d1082e389383a89b3b78b990356f9e509c954a93611fe9b618536a88cde10e2e3578f2d5f482994880d0fb434dfa15ae96be1a0032dee847284e8ea808f1a2fefcc48c6e8f9a4b58510cb238632339e299128",
+    "__v" : 0,
+    "userId" : 2.0
+}
+
+/* 2 */
+{
+    "_id" : 3,
+    "name" : "name2",
+    "email" : "2@gmail.com",
+    "status" : 2.0,
+    "description" : "des ArtitstSptest8",
+    "userName" : "2@gmail.com",
+    "password" : "ed3d67b6e2e09ee93a2485acfb99bea08e04b2f698730c9709247c70be56b95956249934becde5c64633b19c9e32bd7acfb840fb825be3802097869f4fe67423c91cac5496110909c63cd427a0c09d63ad64c920c8847431232de5d2816954f9cad434523965fd0796e47d",
+    "__v" : 0,
+    "userId" : 3.0
+}
+
+/* 3 */
+{
+    "_id" : 4,
+    "name" : "name3",
+    "email" : "3@gmail.com",
+    "status" : 1,
+    "description" : "des ArtitstSptest8",
+    "userName" : "3@gmail.com",
+    "password" : "152f8c6d38197adbfc451a4c2dfce1123ed5f0eb496c2d684dcb5b7792dd285ca1eefa6c57836ae20ed72ec93465f80ae750cd2b8503eaf8a401c688994488bd4b84c1c78f7bfdbe26d0e32629a181e25dd04608858befd0066b29e527e835afbd844f8d002898df60befd",
+    "__v" : 0,
+    "userId" : 4.0
+}
+
+/* 4 */
+{
+    "_id" : 18,
+    "name" : "test1",
+    "email" : "1@123.com",
+    "userImage" : "tempFile/1573465533520_Capture.PNG",
+    "userType" : 3,
+    "status" : 1,
+    "description" : "gfhjdfghdfh",
+    "password" : "12",
+    "__v" : 0,
+    "userId" : 18.0
+}
+
+// result ----------------------------------------------------------------------------------------------------------------
+/* 1 */
+{
+    "_id" : 0,
+    "userId" : 2,
+    "mediaId" : ObjectId("5dc27fba58d3c937c070d29c"),
+    "__v" : 0,
+    "userComment" : [ 
+        {
+            "_id" : 2,
+            "name" : "name1",
+            "email" : "1@gmail.com",
+            "status" : 2,
+            "description" : "des ArtitstSptest8",
+            "userName" : "abc@123.com",
+            "password" : "95ea69ca7649afc3163855cc383203d46c870135bb8530ca1d1082e389383a89b3b78b990356f9e509c954a93611fe9b618536a88cde10e2e3578f2d5f482994880d0fb434dfa15ae96be1a0032dee847284e8ea808f1a2fefcc48c6e8f9a4b58510cb238632339e299128",
+            "__v" : 0,
+            "userId" : 2.0
+        }
+    ],
+    "songComment" : [ 
+        {
+            "_id" : ObjectId("5dc27fba58d3c937c070d29c"),
+            "name" : "abcSong",
+            "artistId" : 2,
+            "userType" : 1,
+            "filePath" : "name2",
+            "thumbnailPath" : "name2",
+            "__v" : 0
+        }
+    ]
+}
+
+/* 2 */
+{
+    "_id" : 1,
+    "userId" : 2,
+    "mediaId" : ObjectId("5dc27fba58d3c937c070d29c"),
+    "comment" : "nice boy",
+    "__v" : 0,
+    "userComment" : [ 
+        {
+            "_id" : 2,
+            "name" : "name1",
+            "email" : "1@gmail.com",
+            "status" : 2,
+            "description" : "des ArtitstSptest8",
+            "userName" : "abc@123.com",
+            "password" : "95ea69ca7649afc3163855cc383203d46c870135bb8530ca1d1082e389383a89b3b78b990356f9e509c954a93611fe9b618536a88cde10e2e3578f2d5f482994880d0fb434dfa15ae96be1a0032dee847284e8ea808f1a2fefcc48c6e8f9a4b58510cb238632339e299128",
+            "__v" : 0,
+            "userId" : 2.0
+        }
+    ],
+    "songComment" : [ 
+        {
+            "_id" : ObjectId("5dc27fba58d3c937c070d29c"),
+            "name" : "abcSong",
+            "artistId" : 2,
+            "userType" : 1,
+            "filePath" : "name2",
+            "thumbnailPath" : "name2",
+            "__v" : 0
+        }
+    ]
+}

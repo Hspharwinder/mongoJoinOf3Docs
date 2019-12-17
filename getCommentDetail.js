@@ -35,3 +35,4 @@ const getCommentDetail = (req,res)=> {
         res.status(200).json([{ success: "Fail to retirve comment details", error: err }])
     })
 }
+exports.getCommentDetail = getCommentDetail;

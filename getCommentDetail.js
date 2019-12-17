@@ -1,5 +1,5 @@
 const getCommentDetail = (req,res)=> {
-    // convert id onto objectId type
+    // convert id into objectId type
     let media = mongoose.Types.ObjectId(req.body.mediaId); 
     comment.aggregate([
         {
